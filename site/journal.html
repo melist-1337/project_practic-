@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Журнал — НутриПланер</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .timeline {
+            position: relative;
+            margin-top: 2rem;
+            padding-left: 2rem;
+            border-left: 2px solid rgba(255, 255, 255, 0.05);
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 3rem;
+        }
+        .timeline-item::before {
+            content: "";
+            width: 12px;
+            height: 12px;
+            background-color: var(--accent-blue);
+            border-radius: 50%;
+            position: absolute;
+            left: calc(-2rem - 7px);
+            top: 6px;
+            box-shadow: 0 0 10px var(--accent-blue);
+        }
+        .timeline-date {
+            font-size: 0.85rem;
+            color: var(--accent-green);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .timeline-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2rem;
+            backdrop-filter: blur(10px);
+        }
+        .timeline-card h3 {
+            color: #fff;
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+        }
+        .timeline-card p {
+            color: #cbd5e1;
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">
+            <div class="polytech-logo-icon"></div>
+            <div class="logo-text">
+                <h1>НутриПланер</h1>
+                <p>Бытовой интерактивный комплекс контроля и планирования питания</p>
+            </div>
+        </div>
+        <div class="terminal-status">
+            <span class="status-dot"></span> Модуль БЖУ: Стабилен
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <nav class="side-nav">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О проекте</a></li>
+                <li><a href="team.html">Участники</a></li>
+                <li><a href="journal.html" class="active">Журнал прогресса</a></li>
+                <li><a href="resources.html">Ресурсы</a></li>
+            </ul>
+        </nav>
+
+        <main class="content-area">
+            <section class="hero-section">
+                <h2>Журнал прогресса разработки</h2>
+                <p class="subtitle">Хронология ключевых этапов создания бытовой аналитической системы «НутриПланер».</p>
+            </section>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Этап 1</div>
+                    <div class="timeline-card">
+                        <h3>Исследование алгоритмов и проектирование логики вычислений</h3>
+                        <p>
+                            На первом этапе были изучены современные диетологические формулы расчета основного обмена веществ с учетом композиции тканей. На основе этих данных была построена математическая модель, позволяющая рассчитывать оптимальное соотношение нутриентов с приоритетом удержания мышечной массы. Сформирована база данных продуктов с высокими диетическими свойствами.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Этап 2</div>
+                    <div class="timeline-card">
+                        <h3>Разработка интерфейса и визуализация макронутриентов</h3>
+                        <p>
+                            Был разработан дизайн-код программного комплекса. На чистом CSS сверстаны элементы приборной панели (дашборда): адаптивные шкалы прогресса, карточки биометрических данных и таблицы распределения нутриентов. Интерфейс оптимизирован под темную тему оформления для снижения нагрузки на зрение при использовании в домашних условиях.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Этап 3</div>
+                    <div class="timeline-card">
+                        <h3>Комплексная сборка и тестирование алгоритмов рекомпозиции</h3>
+                        <p>
+                            Все компоненты объединены в целостное веб-приложение. Проведено стресс-тестирование логики калькулятора на различных сценариях бытовой активности. Проверена точность отображения шкал макронутриентов при динамическом изменении входных параметров (вес, рост, целевой процент жира). Модуль кэширования обеспечивает мгновенный отклик интерфейса.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <footer class="main-footer">
+        <p>© 2026 Проектная деятельность — Московский Политех. Все права защищены.</p>
+    </footer>
+
+</body>
+</html>

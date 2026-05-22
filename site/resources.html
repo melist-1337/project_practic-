@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ресурсы — НутриПланер</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .resources-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .resource-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            backdrop-filter: blur(12px);
+            transition: all 0.25s ease;
+        }
+        .resource-item:hover {
+            border-color: rgba(16, 185, 129, 0.2);
+            box-shadow: 0 4px 20px rgba(16, 185, 129, 0.05);
+        }
+        .resource-info h3 {
+            color: #fff;
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.3px;
+        }
+        .resource-info p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        .resource-link {
+            color: var(--accent-emerald);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            padding: 0.75rem 1.5rem;
+            border-radius: 10px;
+            transition: all 0.2s ease;
+            background: rgba(16, 185, 129, 0.02);
+            white-space: nowrap;
+            letter-spacing: 0.3px;
+        }
+        .resource-link:hover {
+            background: var(--accent-emerald);
+            color: #fff;
+            box-shadow: 0 0 15px rgba(16, 185, 129, 0.3);
+            border-color: var(--accent-emerald);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">
+            <div class="polytech-logo-icon"></div>
+            <div class="logo-text">
+                <h1>НутриПланер</h1>
+                <p>Бытовой интерактивный комплекс контроля и планирования питания</p>
+            </div>
+        </div>
+        <div class="terminal-status">
+            <span class="status-dot"></span> Модуль БЖУ: Стабилен
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <nav class="side-nav">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О проекте</a></li>
+                <li><a href="team.html">Участники</a></li>
+                <li><a href="journal.html">Журнал прогресса</a></li>
+                <li><a href="resources.html" class="active">Ресурсы</a></li>
+            </ul>
+        </nav>
+
+        <main class="content-area">
+            <section class="hero-section">
+                <h2>Полезные ресурсы и материалы</h2>
+                <p class="subtitle">Информационные источники, научные базы данных и ссылки на организацию-партнера проекта.</p>
+            </section>
+
+            <div class="resources-list">
+                <div class="resource-item">
+                    <div class="resource-info">
+                        <h3>Проектная деятельность Московского Политеха</h3>
+                        <p>Официальный внутренний портал университета для управления, загрузки и контроля выполнения студенческих проектов.</p>
+                    </div>
+                    <a href="https://projects.mospolytech.ru" target="_blank" class="resource-link">Перейти на портал</a>
+                </div>
+
+                <div class="resource-item">
+                    <div class="resource-info">
+                        <h3>Всемирная организация здравоохранения (ВОЗ)</h3>
+                        <p>Официальные глобальные руководства, нормативные документы и обновляемые базы данных по вопросам здорового питания.</p>
+                    </div>
+                    <a href="https://www.who.int/ru" target="_blank" class="resource-link">Открыть сайт ВОЗ</a>
+                </div>
+
+                <div class="resource-item">
+                    <div class="resource-info">
+                        <h3>Справочные таблицы химического состава продуктов</h3>
+                        <p>Верифицированные таблицы пищевой ценности и калорийности для калибровки расчетных алгоритмов комплекса.</p>
+                    </div>
+                    <a href="https://www.chefexpert.ru/himicheskij-sostav-pishhevyh-produktov" target="_blank" class="resource-link">Открыть таблицы</a>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <footer class="main-footer">
+        <p>© 2026 Проектная деятельность — Московский Политех. Все права защищены.</p>
+    </footer>
+
+</body>
+</html>

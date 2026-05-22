@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Разработчик — НутриПланер</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .team-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            max-width: 650px;
+            margin-top: 2rem;
+        }
+        .team-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2.5rem;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+        }
+        .developer-name {
+            color: #fff;
+            font-size: 1.75rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin-bottom: 0.25rem;
+        }
+        .team-role {
+            color: var(--accent-emerald);
+            font-size: 0.9rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 2rem;
+            display: inline-block;
+            background: rgba(16, 185, 129, 0.08);
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+            border: 1px solid rgba(16, 185, 129, 0.15);
+        }
+        .contributions-title {
+            color: #fff;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 1.25rem;
+            letter-spacing: -0.2px;
+        }
+        .team-contributions {
+            list-style: none;
+        }
+        .team-contributions li {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 1rem;
+            position: relative;
+            padding-left: 1.75rem;
+            transition: color 0.2s ease;
+        }
+        .team-contributions li:hover {
+            color: #fff;
+        }
+        .team-contributions li::before {
+            content: "→";
+            color: var(--accent-emerald);
+            position: absolute;
+            left: 0;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">
+            <div class="polytech-logo-icon"></div>
+            <div class="logo-text">
+                <h1>НутриПланер</h1>
+                <p>Бытовой интерактивный комплекс контроля и планирования питания</p>
+            </div>
+        </div>
+        <div class="terminal-status">
+            <span class="status-dot"></span> Модуль БЖУ: Стабилен
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <nav class="side-nav">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О проекте</a></li>
+                <li><a href="team.html" class="active">Участники</a></li>
+                <li><a href="journal.html">Журнал прогресса</a></li>
+                <li><a href="resources.html">Ресурсы</a></li>
+            </ul>
+        </nav>
+
+        <main class="content-area">
+            <section class="hero-section">
+                <h2>Автор проекта</h2>
+                <p class="subtitle">Информация о создателе и ведущем разработчике аналитической веб-системы.</p>
+            </section>
+
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="developer-name">Михалычев Матвей</div>
+                    <div class="team-role">Full-Stack UI/UX Developer</div>
+                    
+                    <div class="contributions-title">Личный вклад в реализацию проекта:</div>
+                    <ul class="team-contributions">
+                        <li>Проектирование и верстка архитектурной сетки интерфейса на базе CSS Grid и Flexbox.</li>
+                        <li>Разработка математического движка для расчета энергетического баланса на основе пользовательских параметров.</li>
+                        <li>Интеграция адаптивной системы контроля макронутриентов с визуализацией динамики изменений.</li>
+                        <li>Создание базы данных оптимальных пищевых источников с акцентом на высокую белковую плотность.</li>
+                        <li>Оптимизация интерфейсных компонентов под Dark Premium стилистику смарт-панелей.</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <footer class="main-footer">
+        <p>© 2026 Проектная деятельность — Московский Политех. Все права защищены.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О проекте — НутриПланер</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .about-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2rem;
+            backdrop-filter: blur(10px);
+        }
+        .about-card h3 {
+            color: #fff;
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+        .about-card p {
+            color: #cbd5e1;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">
+            <div class="polytech-logo-icon"></div>
+            <div class="logo-text">
+                <h1>НутриПланер</h1>
+                <p>Бытовой интерактивный комплекс контроля и планирования питания</p>
+            </div>
+        </div>
+        <div class="terminal-status">
+            <span class="status-dot"></span> Модуль БЖУ: Стабилен
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <nav class="side-nav">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html" class="active">О проекте</a></li>
+                <li><a href="team.html">Участники</a></li>
+                <li><a href="journal.html">Журнал прогресса</a></li>
+                <li><a href="resources.html">Ресурсы</a></li>
+            </ul>
+        </nav>
+
+        <main class="content-area">
+            <section class="hero-section">
+                <h2>Концепция и актуальность</h2>
+                <p class="subtitle">Почему автоматизация контроля за составом тела и суточным рационом важна для современного человека.</p>
+            </section>
+
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>Проблема</h3>
+                    <p>
+                        Современный городской ритм жизни часто ведет к нарушению режима питания. Избыточное потребление скрытых жиров и простых углеводов в сочетании с дефицитом качественного белка приводит к нежелательному изменению состава тела: увеличению процента жировой ткани и потере мышечной массы.
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <h3>Решение</h3>
+                    <p>
+                        Программный комплекс предлагает бытовой, интуитивно понятный интерфейс для стационарных экранов или кухонных терминалов. Он позволяет без глубоких академических знаний быстро сопоставлять текущие антропометрические показатели с реальной энергетической ценностью продуктов питания.
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <h3>Целевые ориентиры</h3>
+                    <p>
+                        Основной фокус системы направлен на помощь пользователям, стремящимся к безопасной рекомпозиции тела — постепенному снижению жирового компонента до здоровых нормативов при сохранении активной клеточной массы за счет точного удержания высокого белкового порога.
+                    </p>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <footer class="main-footer">
+        <p>© 2026 Проектная деятельность — Московский Политех. Все права защищены.</p>
+    </footer>
+
+</body>
+</html>
